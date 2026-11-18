@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Missão Titanic</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; background-color: #1a1a2e; color: white; padding-top: 50px; }
+        .card { background-color: #16213e; padding: 30px; border-radius: 15px; display: inline-block; box-shadow: 0 4px 8px rgba(0,0,0,0.5); }
+        input, select, button { margin: 15px 0; padding: 12px; font-size: 16px; border-radius: 8px; border: none; width: 100%; box-sizing: border-box; }
+        button { background-color: #e94560; color: white; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        button:hover { background-color: #ff2e4c; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Missão Titanic 🚢</h1>
+        <p>Descubra se a IA salvaria você!</p>
+        <form action="/prever" method="POST">
+            <label>Qual a sua idade?</label><br>
+            <input type="number" name="idade" required><br>
+            
+            <label>Sexo:</label><br>
+            <select name="sexo">
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+            </select><br>
+            
+            <label>Classe da Passagem:</label><br>
+            <select name="classe">
+                <option value="1">1ª Classe (Luxo total)</option>
+                <option value="2">2ª Classe (Confortável)</option>
+                <option value="3">3ª Classe (Porão da economia)</option>
+            </select><br>
+            
+            <button type="submit">Calcular Sobrevivência</button>
+        </form>
+    </div>
+</body>
+</html>
